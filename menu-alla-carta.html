@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Menu Alla Carta | Toki Sushi–Asian Bologna</title>
+<meta name="description" content="Il menu alla carta di Toki a Bologna: nigiri, sashimi, uramaki, tartare, piatti caldi, dessert e bevande. Piatti singoli con prezzi." />
+<meta name="theme-color" content="#0d0d10" />
+<link rel="icon" href="assets/img/favicon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<header class="site-header solid">
+  <div class="container">
+    <a class="brand" href="index.html"><img class="brand__img" src="assets/img/logo-light.png" alt="Toki Sushi-Asian Bologna" /></a>
+    <nav class="nav" aria-label="Navigazione principale">
+      <a href="index.html">Home</a><a href="il-ristorante.html">Il Ristorante</a><a href="menu-ayce.html">Menu AYCE</a>
+      <a href="menu-alla-carta.html" aria-current="page">Menu Alla Carta</a><a href="gallery.html">Gallery</a><a href="contatti.html">Contatti</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn--sm" href="contatti.html#prenota">Prenota un tavolo</a>
+      <button class="hamburger" aria-label="Apri il menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<nav class="mobile-nav" aria-label="Menu mobile">
+  <a href="index.html">Home</a><a href="il-ristorante.html">Il Ristorante</a><a href="menu-ayce.html">Menu AYCE</a>
+  <a href="menu-alla-carta.html">Menu Alla Carta</a><a href="gallery.html">Gallery</a><a href="contatti.html">Contatti</a>
+  <a class="btn" href="contatti.html#prenota">Prenota un tavolo</a>
+  <div class="mobile-nav__contact">Via Ferrarese 119/2, Bologna · +39 051 0143981</div>
+</nav>
+
+<section class="page-hero">
+  <div class="page-hero__media"><img src="assets/img/cat-uramaki.jpg" alt="Uramaki speciale di Toki" /></div>
+  <div class="page-hero__inner">
+    <div class="container">
+      <p class="crumbs reveal"><a href="index.html">Home</a> · Menu Alla Carta</p>
+      <h1 class="reveal" data-d="1">Menu Alla Carta</h1>
+      <p class="reveal" data-d="2">Piatti singoli, bevande e dessert. Prezzi indicativi, facilmente aggiornabili.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="tabs" data-tabset data-target="#carta">
+      <button class="tab active" data-filter="all">Tutto</button>
+      <button class="tab" data-filter="nigiri">Nigiri</button>
+      <button class="tab" data-filter="sashimi">Sashimi</button>
+      <button class="tab" data-filter="uramaki">Uramaki</button>
+      <button class="tab" data-filter="tartare">Tartare &amp; Antipasti</button>
+      <button class="tab" data-filter="caldi">Piatti caldi</button>
+      <button class="tab" data-filter="dessert">Dessert</button>
+      <button class="tab" data-filter="bevande">Bevande</button>
+    </div>
+
+    <div id="carta" style="margin-top:clamp(36px,5vw,56px)">
+      <div class="menu-list">
+        <!-- COLONNA A -->
+        <div>
+          <div class="menu-block" data-cat="nigiri">
+            <h3>Nigiri <span class="jp">握り</span></h3>
+            <p class="sub">2 pezzi per porzione.</p>
+            <div class="m-item"><span class="m-item__name"><b>Salmone</b></span><span class="m-item__dots"></span><span class="m-item__price">3,50 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Tonno</b></span><span class="m-item__dots"></span><span class="m-item__price">4,50 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Branzino</b></span><span class="m-item__dots"></span><span class="m-item__price">4,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Salmone Flambé</b><small>Scottato, teriyaki</small></span><span class="m-item__dots"></span><span class="m-item__price">4,50 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Gambero</b></span><span class="m-item__dots"></span><span class="m-item__price">4,00 €</span></div>
+          </div>
+          <div class="menu-block" data-cat="sashimi">
+            <h3>Sashimi <span class="jp">刺身</span></h3>
+            <p class="sub">Tagli puri, 5 pezzi.</p>
+            <div class="m-item"><span class="m-item__name"><b>Sashimi Salmone</b></span><span class="m-item__dots"></span><span class="m-item__price">9,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Sashimi Tonno</b></span><span class="m-item__dots"></span><span class="m-item__price">11,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Sashimi Misto</b><small>Selezione dello chef</small></span><span class="m-item__dots"></span><span class="m-item__price">14,00 €</span></div>
+          </div>
+          <div class="menu-block" data-cat="uramaki">
+            <h3>Uramaki &amp; Roll <span class="jp">巻き</span></h3>
+            <p class="sub">8 pezzi per rotolo.</p>
+            <div class="m-item"><span class="m-item__name"><b>California</b><small>Surimi, avocado, tobiko</small></span><span class="m-item__dots"></span><span class="m-item__price">7,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Salmon Roll</b></span><span class="m-item__dots"></span><span class="m-item__price">7,50 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Ebi Tempura</b><small>Gambero croccante <span class="tag-new">Top</span></small></span><span class="m-item__dots"></span><span class="m-item__price">9,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Spicy Tuna</b><small><span class="tag-spicy">Piccante</span></small></span><span class="m-item__dots"></span><span class="m-item__price">9,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Toki Signature</b><small>Salmone scottato, mango, oro</small></span><span class="m-item__dots"></span><span class="m-item__price">11,00 €</span></div>
+          </div>
+        </div>
+        <!-- COLONNA B -->
+        <div>
+          <div class="menu-block" data-cat="tartare">
+            <h3>Tartare &amp; Antipasti <span class="jp">前菜</span></h3>
+            <p class="sub">Crudi e piccoli assaggi.</p>
+            <div class="m-item"><span class="m-item__name"><b>Tartare di Salmone</b><small>Agrumi, olio EVO</small></span><span class="m-item__dots"></span><span class="m-item__price">8,50 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Tartare di Tonno</b><small>Avocado, sesamo</small></span><span class="m-item__dots"></span><span class="m-item__price">10,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Insalata di Alghe</b><small><span class="tag-veg">Veg</span></small></span><span class="m-item__dots"></span><span class="m-item__price">5,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Edamame al sale</b><small><span class="tag-veg">Veg</span></small></span><span class="m-item__dots"></span><span class="m-item__price">4,50 €</span></div>
+          </div>
+          <div class="menu-block" data-cat="caldi">
+            <h3>Piatti Caldi <span class="jp">温菜</span></h3>
+            <p class="sub">Dal wok e dalla frittura.</p>
+            <div class="m-item"><span class="m-item__name"><b>Gyoza</b><small>5 pezzi, verdure o carne</small></span><span class="m-item__dots"></span><span class="m-item__price">6,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Riso alla Cantonese</b></span><span class="m-item__dots"></span><span class="m-item__price">6,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Spaghetti di Soia Saltati</b><small><span class="tag-veg">Veg</span></small></span><span class="m-item__dots"></span><span class="m-item__price">6,50 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Zuppa di Miso</b></span><span class="m-item__dots"></span><span class="m-item__price">3,50 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Pollo alle Mandorle</b></span><span class="m-item__dots"></span><span class="m-item__price">8,00 €</span></div>
+          </div>
+          <div class="menu-block" data-cat="dessert">
+            <h3>Dessert <span class="jp">甘味</span></h3>
+            <p class="sub">Dolci chiusure.</p>
+            <div class="m-item"><span class="m-item__name"><b>Mochi</b><small>2 pezzi, gusti assortiti</small></span><span class="m-item__dots"></span><span class="m-item__price">5,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Tempura di Frutta</b></span><span class="m-item__dots"></span><span class="m-item__price">5,50 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Gelato Fritto</b></span><span class="m-item__dots"></span><span class="m-item__price">5,00 €</span></div>
+          </div>
+          <div class="menu-block" data-cat="bevande">
+            <h3>Bevande <span class="jp">飲物</span></h3>
+            <p class="sub">Analcolici, birre e distillati.</p>
+            <div class="m-item"><span class="m-item__name"><b>Acqua</b><small>Naturale o frizzante</small></span><span class="m-item__dots"></span><span class="m-item__price">2,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Bibite in lattina</b></span><span class="m-item__dots"></span><span class="m-item__price">3,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Birra Giapponese</b><small>33 cl</small></span><span class="m-item__dots"></span><span class="m-item__price">4,50 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Tè verde</b></span><span class="m-item__dots"></span><span class="m-item__price">2,50 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Sakè</b><small>Caldo o freddo</small></span><span class="m-item__dots"></span><span class="m-item__price">5,00 €</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="ayce__note" style="color:var(--txt-muted)">I prezzi sono indicativi e da confermare. Alcuni prodotti possono essere surgelati all'origine. Per allergeni e intolleranze chiedi al personale di sala.</p>
+    <div class="center" style="margin-top:20px"><a class="btn" href="contatti.html#prenota">Prenota un tavolo</a></div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="brand" href="index.html"><img class="brand__img" src="assets/img/logo-light.png" alt="Toki Sushi-Asian Bologna" /></a>
+        <p>Cucina giapponese contemporanea e formula All You Can Eat nel cuore di Bologna. Pesce selezionato, preparazione espressa.</p>
+        <div class="socials"><a href="https://www.instagram.com/toki_sushiasianbologna/" target="_blank" rel="noopener" aria-label="Instagram">◈</a><a href="https://www.facebook.com/tokisushiasianbologna" target="_blank" rel="noopener" aria-label="Facebook">f</a><a href="https://www.tiktok.com/@tokisushiasian" target="_blank" rel="noopener" aria-label="TikTok">♪</a></div><div class="delivery-links"><span class="delivery-links__label">Ordina online</span><a class="deliv deliv--je" href="https://www.justeat.it/restaurants-toki-sushi-asian-bologna-40128/menu" target="_blank" rel="noopener">Just Eat</a><a class="deliv deliv--gl" href="https://glovoapp.com/it/it/bologna/stores/toki-sushi-asian-bol" target="_blank" rel="noopener">Glovo</a><a class="deliv deliv--dl" href="https://deliveroo.it/it/menu/Bologna/bolognina/toki-sushi-asian-boce" target="_blank" rel="noopener">Deliveroo</a></div>
+      </div>
+      <div class="footer-col"><h5>Naviga</h5><a href="il-ristorante.html">Il Ristorante</a><a href="menu-ayce.html">Menu AYCE</a><a href="menu-alla-carta.html">Menu Alla Carta</a><a href="gallery.html">Gallery</a><a href="contatti.html">Contatti</a></div>
+      <div class="footer-col"><h5>Orari</h5><p>Pranzo · 12:00 — 15:00</p><p>Cena · 19:00 — 00:00</p><p>Aperto tutti i giorni</p></div>
+      <div class="footer-col"><h5>Contatti</h5><p>Via Ferrarese 119/2<br />40128 Bologna (BO)</p><a href="tel:+390510143981">+39 051 0143981</a><a href="mailto:info@toki-bologna.it">info@toki-bologna.it</a></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> Toki Sushi–Asian Bologna</span>
+      <div class="footer-legal"><a href="privacy.html">Privacy Policy</a><a href="cookie.html">Cookie Policy</a><a href="https://www.google.com/maps/search/?api=1&query=Toki+Sushi-Asian+Via+Ferrarese+119%2F2+Bologna" target="_blank" rel="noopener">Google Maps</a></div>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
