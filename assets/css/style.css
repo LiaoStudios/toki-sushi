@@ -634,3 +634,25 @@ body.menu-open .mobile-nav__contact{opacity:1}
 @media (max-width:820px){
   .booking__map-col{min-height:300px}
 }
+
+/* =========================================================
+   v5 — Menu Alla Carta completo (colonne, liste, legenda)
+   ========================================================= */
+.carta-blocks{columns:2;column-gap:clamp(32px,5vw,72px)}
+.carta-blocks .menu-block{break-inside:avoid;-webkit-column-break-inside:avoid;margin:0 0 40px}
+.carta-blocks .menu-block+.menu-block{margin-top:0}
+.m-list{margin-top:6px}
+.carta-blocks .m-item{padding:11px 0}
+.carta-blocks .m-item__name{max-width:none}
+.m-item__name .tag-spicy,.m-item__name .tag-veg,.m-item__name .tag-new{margin-left:.4em;vertical-align:middle}
+.legend{margin-top:24px;padding:22px 24px;border:1px solid var(--line-2);border-radius:var(--radius);background:var(--paper-2)}
+.legend h4{font-size:1.05rem;margin-bottom:8px}
+.legend p{font-size:.8rem;color:var(--txt-muted);line-height:1.7}
+@media (max-width:820px){
+  .carta-blocks{columns:1}
+}
+
+/* v5 — griglia 3 formule AYCE */
+.ayce__grid--3{grid-template-columns:repeat(3,1fr)}
+.ayce__grid--3 .formula-card__price b{font-size:2.4rem}
+@media (max-width:900px){.ayce__grid--3{grid-template-columns:1fr}}

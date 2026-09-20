@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Menu Alla Carta | Toki Sushi–Asian Bologna</title>
-<meta name="description" content="Il menu alla carta di Toki a Bologna: nigiri, sashimi, uramaki, tartare, piatti caldi, dessert e bevande. Piatti singoli con prezzi." />
+<meta name="description" content="Menu alla carta di Toki Sushi–Asian Bologna: oltre 190 piatti tra nigiri, sashimi, uramaki, tartare, carpacci, ramen, wok e secondi, con prezzi e allergeni." />
 <meta name="theme-color" content="#0d0d10" />
 <link rel="icon" href="assets/img/favicon.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -40,7 +40,7 @@
     <div class="container">
       <p class="crumbs reveal"><a href="index.html">Home</a> · Menu Alla Carta</p>
       <h1 class="reveal" data-d="1">Menu Alla Carta</h1>
-      <p class="reveal" data-d="2">Piatti singoli, bevande e dessert. Prezzi indicativi, facilmente aggiornabili.</p>
+      <p class="reveal" data-d="2">Oltre 190 piatti: sushi, crudo, primi, wok e secondi. Tutti i prezzi alla carta del ristorante.</p>
     </div>
   </div>
 </section>
@@ -49,86 +49,350 @@
   <div class="container">
     <div class="tabs" data-tabset data-target="#carta">
       <button class="tab active" data-filter="all">Tutto</button>
-      <button class="tab" data-filter="nigiri">Nigiri</button>
-      <button class="tab" data-filter="sashimi">Sashimi</button>
-      <button class="tab" data-filter="uramaki">Uramaki</button>
-      <button class="tab" data-filter="tartare">Tartare &amp; Antipasti</button>
-      <button class="tab" data-filter="caldi">Piatti caldi</button>
-      <button class="tab" data-filter="dessert">Dessert</button>
-      <button class="tab" data-filter="bevande">Bevande</button>
+      <button class="tab" data-filter="antipasti">Antipasti &amp; Caldi</button>
+      <button class="tab" data-filter="sushi">Sushi &amp; Roll</button>
+      <button class="tab" data-filter="crudo">Crudo &amp; Sashimi</button>
+      <button class="tab" data-filter="primi">Primi &amp; Wok</button>
+      <button class="tab" data-filter="secondi">Secondi</button>
     </div>
 
-    <div id="carta" style="margin-top:clamp(36px,5vw,56px)">
-      <div class="menu-list">
-        <!-- COLONNA A -->
-        <div>
-          <div class="menu-block" data-cat="nigiri">
-            <h3>Nigiri <span class="jp">握り</span></h3>
-            <p class="sub">2 pezzi per porzione.</p>
-            <div class="m-item"><span class="m-item__name"><b>Salmone</b></span><span class="m-item__dots"></span><span class="m-item__price">3,50 €</span></div>
-            <div class="m-item"><span class="m-item__name"><b>Tonno</b></span><span class="m-item__dots"></span><span class="m-item__price">4,50 €</span></div>
-            <div class="m-item"><span class="m-item__name"><b>Branzino</b></span><span class="m-item__dots"></span><span class="m-item__price">4,00 €</span></div>
-            <div class="m-item"><span class="m-item__name"><b>Salmone Flambé</b><small>Scottato, teriyaki</small></span><span class="m-item__dots"></span><span class="m-item__price">4,50 €</span></div>
-            <div class="m-item"><span class="m-item__name"><b>Gambero</b></span><span class="m-item__dots"></span><span class="m-item__price">4,00 €</span></div>
-          </div>
-          <div class="menu-block" data-cat="sashimi">
-            <h3>Sashimi <span class="jp">刺身</span></h3>
-            <p class="sub">Tagli puri, 5 pezzi.</p>
-            <div class="m-item"><span class="m-item__name"><b>Sashimi Salmone</b></span><span class="m-item__dots"></span><span class="m-item__price">9,00 €</span></div>
-            <div class="m-item"><span class="m-item__name"><b>Sashimi Tonno</b></span><span class="m-item__dots"></span><span class="m-item__price">11,00 €</span></div>
-            <div class="m-item"><span class="m-item__name"><b>Sashimi Misto</b><small>Selezione dello chef</small></span><span class="m-item__dots"></span><span class="m-item__price">14,00 €</span></div>
-          </div>
-          <div class="menu-block" data-cat="uramaki">
-            <h3>Uramaki &amp; Roll <span class="jp">巻き</span></h3>
-            <p class="sub">8 pezzi per rotolo.</p>
-            <div class="m-item"><span class="m-item__name"><b>California</b><small>Surimi, avocado, tobiko</small></span><span class="m-item__dots"></span><span class="m-item__price">7,00 €</span></div>
-            <div class="m-item"><span class="m-item__name"><b>Salmon Roll</b></span><span class="m-item__dots"></span><span class="m-item__price">7,50 €</span></div>
-            <div class="m-item"><span class="m-item__name"><b>Ebi Tempura</b><small>Gambero croccante <span class="tag-new">Top</span></small></span><span class="m-item__dots"></span><span class="m-item__price">9,00 €</span></div>
-            <div class="m-item"><span class="m-item__name"><b>Spicy Tuna</b><small><span class="tag-spicy">Piccante</span></small></span><span class="m-item__dots"></span><span class="m-item__price">9,00 €</span></div>
-            <div class="m-item"><span class="m-item__name"><b>Toki Signature</b><small>Salmone scottato, mango, oro</small></span><span class="m-item__dots"></span><span class="m-item__price">11,00 €</span></div>
-          </div>
-        </div>
-        <!-- COLONNA B -->
-        <div>
-          <div class="menu-block" data-cat="tartare">
-            <h3>Tartare &amp; Antipasti <span class="jp">前菜</span></h3>
-            <p class="sub">Crudi e piccoli assaggi.</p>
-            <div class="m-item"><span class="m-item__name"><b>Tartare di Salmone</b><small>Agrumi, olio EVO</small></span><span class="m-item__dots"></span><span class="m-item__price">8,50 €</span></div>
-            <div class="m-item"><span class="m-item__name"><b>Tartare di Tonno</b><small>Avocado, sesamo</small></span><span class="m-item__dots"></span><span class="m-item__price">10,00 €</span></div>
-            <div class="m-item"><span class="m-item__name"><b>Insalata di Alghe</b><small><span class="tag-veg">Veg</span></small></span><span class="m-item__dots"></span><span class="m-item__price">5,00 €</span></div>
-            <div class="m-item"><span class="m-item__name"><b>Edamame al sale</b><small><span class="tag-veg">Veg</span></small></span><span class="m-item__dots"></span><span class="m-item__price">4,50 €</span></div>
-          </div>
-          <div class="menu-block" data-cat="caldi">
-            <h3>Piatti Caldi <span class="jp">温菜</span></h3>
-            <p class="sub">Dal wok e dalla frittura.</p>
-            <div class="m-item"><span class="m-item__name"><b>Gyoza</b><small>5 pezzi, verdure o carne</small></span><span class="m-item__dots"></span><span class="m-item__price">6,00 €</span></div>
-            <div class="m-item"><span class="m-item__name"><b>Riso alla Cantonese</b></span><span class="m-item__dots"></span><span class="m-item__price">6,00 €</span></div>
-            <div class="m-item"><span class="m-item__name"><b>Spaghetti di Soia Saltati</b><small><span class="tag-veg">Veg</span></small></span><span class="m-item__dots"></span><span class="m-item__price">6,50 €</span></div>
-            <div class="m-item"><span class="m-item__name"><b>Zuppa di Miso</b></span><span class="m-item__dots"></span><span class="m-item__price">3,50 €</span></div>
-            <div class="m-item"><span class="m-item__name"><b>Pollo alle Mandorle</b></span><span class="m-item__dots"></span><span class="m-item__price">8,00 €</span></div>
-          </div>
-          <div class="menu-block" data-cat="dessert">
-            <h3>Dessert <span class="jp">甘味</span></h3>
-            <p class="sub">Dolci chiusure.</p>
-            <div class="m-item"><span class="m-item__name"><b>Mochi</b><small>2 pezzi, gusti assortiti</small></span><span class="m-item__dots"></span><span class="m-item__price">5,00 €</span></div>
-            <div class="m-item"><span class="m-item__name"><b>Tempura di Frutta</b></span><span class="m-item__dots"></span><span class="m-item__price">5,50 €</span></div>
-            <div class="m-item"><span class="m-item__name"><b>Gelato Fritto</b></span><span class="m-item__dots"></span><span class="m-item__price">5,00 €</span></div>
-          </div>
-          <div class="menu-block" data-cat="bevande">
-            <h3>Bevande <span class="jp">飲物</span></h3>
-            <p class="sub">Analcolici, birre e distillati.</p>
-            <div class="m-item"><span class="m-item__name"><b>Acqua</b><small>Naturale o frizzante</small></span><span class="m-item__dots"></span><span class="m-item__price">2,00 €</span></div>
-            <div class="m-item"><span class="m-item__name"><b>Bibite in lattina</b></span><span class="m-item__dots"></span><span class="m-item__price">3,00 €</span></div>
-            <div class="m-item"><span class="m-item__name"><b>Birra Giapponese</b><small>33 cl</small></span><span class="m-item__dots"></span><span class="m-item__price">4,50 €</span></div>
-            <div class="m-item"><span class="m-item__name"><b>Tè verde</b></span><span class="m-item__dots"></span><span class="m-item__price">2,50 €</span></div>
-            <div class="m-item"><span class="m-item__name"><b>Sakè</b><small>Caldo o freddo</small></span><span class="m-item__dots"></span><span class="m-item__price">5,00 €</span></div>
+    <div id="carta" class="carta-blocks" style="margin-top:clamp(36px,5vw,56px)">
+        <div class="menu-block" data-cat="antipasti">
+          <h3>Antipasti <span class="jp">前菜</span></h3>
+          <div class="m-list">
+            <div class="m-item"><span class="m-item__name"><b>Edamame</b><span class="tag-veg">Veg</span><small>fagiolini di soia — Allergeni: L·P</small></span><span class="m-item__dots"></span><span class="m-item__price">4,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Wakame</b><span class="tag-spicy">Piccante</span><span class="tag-veg">Veg</span><small>alghe piccanti — Allergeni: L·N·P</small></span><span class="m-item__dots"></span><span class="m-item__price">4,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Involtino Primavera</b><span class="tag-veg">Veg</span><small>involtino di verdure — 2 pz. · Allergeni: C·L·M</small></span><span class="m-item__dots"></span><span class="m-item__price">4,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Stick Gambero</b><small>involtini con gamberi — 3 pz. · Allergeni: B·C·D·M·P</small></span><span class="m-item__dots"></span><span class="m-item__price">5,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Tacos Salmone</b><span class="tag-new">max 1/pers.</span><small>philadelphia con latte condensato, salmone, avocado, salsa teriyaki — 1 pz. · Allergeni: C·E·I·L·M</small></span><span class="m-item__dots"></span><span class="m-item__price">4,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Tacos Gamberi</b><span class="tag-new">max 1/pers.</span><small>philadelphia con latte condensato, gamberi in tempura, salsa teriyaki — 1 pz. · Allergeni: B·C·E·L·P</small></span><span class="m-item__dots"></span><span class="m-item__price">4,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Toast Tonno</b><small>tostarelli con tonno cotto, insalata, uova di rombo, tartufo — 3 pz. · Allergeni: C·I·M</small></span><span class="m-item__dots"></span><span class="m-item__price">5,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Polpo Salad</b><span class="tag-new">max 1/pers.</span><small>rucola, polpo esterno, salsa dello chef — Allergeni: D·G·L·P</small></span><span class="m-item__dots"></span><span class="m-item__price">5,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Sashimi Salad</b><span class="tag-new">max 1/pers.</span><small>insalata mista, pesce misto, salsa dello chef, sesamo — Allergeni: I·L·N</small></span><span class="m-item__dots"></span><span class="m-item__price">5,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Mais Salad</b><span class="tag-veg">Veg</span><small>insalata mista, mais, salsa dello chef — Allergeni: L</small></span><span class="m-item__dots"></span><span class="m-item__price">5,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Beef Salad</b><small>manzo fumé, insalata, salsa dello chef — Allergeni: K·L</small></span><span class="m-item__dots"></span><span class="m-item__price">5,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Trio Del Mare</b><span class="tag-new">max 1/pers.</span><small>mozzarella, tonno, amaebi, tobiko, olio di basilico, salse dello chef — Allergeni: B·E·I·L·M·P</small></span><span class="m-item__dots"></span><span class="m-item__price">3,50 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Marine Sake</b><small>salmone marinato, olive, carciofi — Allergeni: D·G·I</small></span><span class="m-item__dots"></span><span class="m-item__price">5,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Frutti Mare Salad</b><span class="tag-new">max 1/pers.</span><small>seppia, gamberi, sedano, olive — Allergeni: B·G·J·L·P</small></span><span class="m-item__dots"></span><span class="m-item__price">6,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Pani Puri</b><span class="tag-new">max 1/pers.</span><small>Pani puri fritto, philadelphia, salmone, gambero crudo, salsa dello cheff — Allergeni: B·E·I·L·P</small></span><span class="m-item__dots"></span><span class="m-item__price">2,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Insalata Style</b><span class="tag-new">max 1/pers.</span><small>branzino, insalata, salsa ponzu — 3 pz. · Allergeni: I·L</small></span><span class="m-item__dots"></span><span class="m-item__price">4,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>New Roll</b><span class="tag-new">max 1/pers.</span><small>salmone, gambero in tempura, philadelphia, salsa teriyaki, gazpacho — 3 pz. · Allergeni: B·C·E·I·L</small></span><span class="m-item__dots"></span><span class="m-item__price">6,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Polipo E Patate</b><small>polipo, patate, prezzemolo — Allergeni: D·G·P</small></span><span class="m-item__dots"></span><span class="m-item__price">5,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Polipo</b><span class="tag-new">max 1/pers.</span><small>polipo con succo di pomodoro, olive — Allergeni: G·L·P</small></span><span class="m-item__dots"></span><span class="m-item__price">5,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Seppia Con Sedano</b><small>seppia, sedano, salsa yozu, sesamo — Allergeni: G·J·L·N</small></span><span class="m-item__dots"></span><span class="m-item__price">5,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Jin Si Ebi</b><span class="tag-new">max 1/pers.</span><small>gamberi, maionese, jin si — 3 pz. · Allergeni: B·C·L·M·P</small></span><span class="m-item__dots"></span><span class="m-item__price">5,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Tako Yaki</b><span class="tag-new">max 1/pers.</span><small>polpette di polipo fritto — 2 pz. · Allergeni: C·G·L·P</small></span><span class="m-item__dots"></span><span class="m-item__price">4,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Sake Imo Yaki</b><span class="tag-new">max 1/pers.</span><small>salmone in cartoccio con patate, salsa teriyaki — 3 pz. · Allergeni: B·C·I·L·N</small></span><span class="m-item__dots"></span><span class="m-item__price">4,50 €</span></div>
           </div>
         </div>
-      </div>
+        <div class="menu-block" data-cat="antipasti">
+          <h3>Maki Fritto <span class="jp">揚げ巻</span></h3>
+          <div class="m-list">
+            <div class="m-item"><span class="m-item__name"><b>Hoso Salmone Fry</b><span class="tag-spicy">Piccante</span><small>hossomaki croccanti con spicy salmone, salsa spicy, teriyaki, kataifi — 3 pz. · Allergeni: C·I·L·M</small></span><span class="m-item__dots"></span><span class="m-item__price">5,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Hoso Mango Fry</b><small>hossomaki croccanti, salsa mango, philadelphia — 3 pz. · Allergeni: C·E·I</small></span><span class="m-item__dots"></span><span class="m-item__price">5,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Hoso Fragola Fry</b><small>hossomaki croccanti, fragola, philadelphia, salsa alla fragola — 3 pz. · Allergeni: C·E·I</small></span><span class="m-item__dots"></span><span class="m-item__price">5,00 €</span></div>
+          </div>
+        </div>
+        <div class="menu-block" data-cat="antipasti">
+          <h3>Zuppe <span class="jp">汁物</span></h3>
+          <div class="m-list">
+            <div class="m-item"><span class="m-item__name"><b>Miso Soup</b><small>zuppa di miso con alghe e tofu — Allergeni: L</small></span><span class="m-item__dots"></span><span class="m-item__price">3,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Zuppa Agropiccante</b><span class="tag-spicy">Piccante</span><small>zuppa piccante con tofu, bambù, funghi neri, uova, verdure — Allergeni: L·M</small></span><span class="m-item__dots"></span><span class="m-item__price">3,50 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Soup Di Mare</b><span class="tag-new">max 1/pers.</span><small>zuppa con gamberi, polpa di granchio, asparagi — Allergeni: B·C·G·L·P</small></span><span class="m-item__dots"></span><span class="m-item__price">3,50 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Budino All&#x27;Uovo E Gambero</b><span class="tag-new">max 1/pers.</span><small>uova al vapore, gambero — Allergeni: B·L·M·P</small></span><span class="m-item__dots"></span><span class="m-item__price">4,00 €</span></div>
+          </div>
+        </div>
+        <div class="menu-block" data-cat="antipasti">
+          <h3>Tempura <span class="jp">天ぷら</span></h3>
+          <div class="m-list">
+            <div class="m-item"><span class="m-item__name"><b>Ebi Tempura</b><small>gamberoni fritti — Allergeni: B·C·P</small></span><span class="m-item__dots"></span><span class="m-item__price">6,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Tempura Verdura</b><span class="tag-veg">Veg</span><small>verdure miste fritte — Allergeni: C</small></span><span class="m-item__dots"></span><span class="m-item__price">4,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Calamari Fritti</b><small>calamari fritti — Allergeni: C·G·M·P</small></span><span class="m-item__dots"></span><span class="m-item__price">6,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Pollo Fritto</b><small>pollo fritto — Allergeni: C·N·P</small></span><span class="m-item__dots"></span><span class="m-item__price">6,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Pane Fritto</b><small>pane fritto — 2 pz. · Allergeni: C·E·M·P</small></span><span class="m-item__dots"></span><span class="m-item__price">4,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Pane Al Vapore</b><small>pane al vapore — 2 pz. · Allergeni: C·E·P</small></span><span class="m-item__dots"></span><span class="m-item__price">4,00 €</span></div>
+          </div>
+        </div>
+        <div class="menu-block" data-cat="antipasti">
+          <h3>Ravioli <span class="jp">餃子</span></h3>
+          <div class="m-list">
+            <div class="m-item"><span class="m-item__name"><b>Gyoza</b><small>ravioli al vapore con carne di maiale, verdure — 3 pz. · Allergeni: C·L·P</small></span><span class="m-item__dots"></span><span class="m-item__price">5,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Ravioli Di Verdure</b><span class="tag-veg">Veg</span><small>ravioli al vapore con verdure — 3 pz. · Allergeni: C·L·P</small></span><span class="m-item__dots"></span><span class="m-item__price">5,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Yaki Gyoza</b><small>ravioli alla griglia con carne di maiale, verdure — 3 pz. · Allergeni: C·L·P</small></span><span class="m-item__dots"></span><span class="m-item__price">5,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Gyoza Alla Griglia Con Pollo</b><small>ravioli alla griglia con carne di pollo — 3 pz. · Allergeni: C·L·P</small></span><span class="m-item__dots"></span><span class="m-item__price">5,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Ebi Gyoza</b><small>ravioli al vapore con gamberi, carne di maiale — 3 pz. · Allergeni: B·C·L·P</small></span><span class="m-item__dots"></span><span class="m-item__price">5,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Dimsum</b><small>ripieno di manzo, soia, pepe bianco — 3 pz. · Allergeni: C·J·L·M·P</small></span><span class="m-item__dots"></span><span class="m-item__price">5,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Bao Coniglio</b><small>bao con ripieno di custard dolce — 2 pz. · Allergeni: C·E·L·M·P</small></span><span class="m-item__dots"></span><span class="m-item__price">4,00 €</span></div>
+          </div>
+        </div>
+        <div class="menu-block" data-cat="sushi">
+          <h3>Nigiri <span class="jp">握り</span></h3>
+          <div class="m-list">
+            <div class="m-item"><span class="m-item__name"><b>Sake</b><small>salmone — Allergeni: I</small></span><span class="m-item__dots"></span><span class="m-item__price">3,50 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Maguro</b><small>tonno — Allergeni: I</small></span><span class="m-item__dots"></span><span class="m-item__price">4,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Suzuki</b><small>spigola, tobiko — Allergeni: I</small></span><span class="m-item__dots"></span><span class="m-item__price">3,50 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Amaebi</b><span class="tag-new">max 1/pers.</span><small>gamberi crudi, salsa yuzu — Allergeni: B·L·P</small></span><span class="m-item__dots"></span><span class="m-item__price">4,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Tako</b><small>polpo — Allergeni: G·P</small></span><span class="m-item__dots"></span><span class="m-item__price">3,50 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Ebi</b><small>gambero cotto — Allergeni: B·P</small></span><span class="m-item__dots"></span><span class="m-item__price">4,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Unaghi</b><small>anguilla, salsa teriyaki — Allergeni: I·L·P</small></span><span class="m-item__dots"></span><span class="m-item__price">5,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Salmone Scottato</b><small>salmone, salsa cheddar, fettine di mandorle, kataifi — Allergeni: E·H·I</small></span><span class="m-item__dots"></span><span class="m-item__price">4,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Maguro Scottato</b><small>tonno, salsa cheddar, fettine di mandorle, kataifi — Allergeni: E·H·I</small></span><span class="m-item__dots"></span><span class="m-item__price">4,00 €</span></div>
+          </div>
+        </div>
+        <div class="menu-block" data-cat="sushi">
+          <h3>Onighiri <span class="jp">おにぎり</span></h3>
+          <div class="m-list">
+            <div class="m-item"><span class="m-item__name"><b>Sake Onighiri</b><small>salmone, sesamo — Allergeni: I·N</small></span><span class="m-item__dots"></span><span class="m-item__price">3,50 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Maguro Onighiri</b><small>tonno, sesamo — Allergeni: I·N</small></span><span class="m-item__dots"></span><span class="m-item__price">3,50 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Onighiri Ebiten</b><small>gambero fritto, sesamo, teriyaki — Allergeni: B·J·L·P</small></span><span class="m-item__dots"></span><span class="m-item__price">3,50 €</span></div>
+          </div>
+        </div>
+        <div class="menu-block" data-cat="sushi">
+          <h3>Hosomaki <span class="jp">細巻</span></h3>
+          <div class="m-list">
+            <div class="m-item"><span class="m-item__name"><b>Sake Maki</b><small>salmone — Allergeni: I</small></span><span class="m-item__dots"></span><span class="m-item__price">5,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Tekka Maki</b><small>tonno — Allergeni: I</small></span><span class="m-item__dots"></span><span class="m-item__price">5,50 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Kappa Maki</b><span class="tag-veg">Veg</span><small>cetriolo</small></span><span class="m-item__dots"></span><span class="m-item__price">4,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Shiromi Maki</b><small>pesce bianco — Allergeni: I</small></span><span class="m-item__dots"></span><span class="m-item__price">5,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Avocado Maki</b><span class="tag-veg">Veg</span><small>avocado</small></span><span class="m-item__dots"></span><span class="m-item__price">4,50 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Hoso Honyui</b><span class="tag-veg">Veg</span><small>patate dolci fritte — Allergeni: C</small></span><span class="m-item__dots"></span><span class="m-item__price">4,50 €</span></div>
+          </div>
+        </div>
+        <div class="menu-block" data-cat="sushi">
+          <h3>Gunkan <span class="jp">軍艦</span></h3>
+          <div class="m-list">
+            <div class="m-item"><span class="m-item__name"><b>Gunkan Spicy Sake</b><span class="tag-spicy">Piccante</span><small>salmone piccante, tobiko, salsa spicy — Allergeni: I·M</small></span><span class="m-item__dots"></span><span class="m-item__price">4,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Gunkan Spicy Maguro</b><span class="tag-spicy">Piccante</span><small>tonno piccante, tobiko, salsa spicy — Allergeni: I·M</small></span><span class="m-item__dots"></span><span class="m-item__price">4,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Gunkan Suzuki</b><small>branzino, salsa yuzu — Allergeni: I·L</small></span><span class="m-item__dots"></span><span class="m-item__price">4,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Gunkan Ebiten</b><small>gamberi in tempura, salsa teriyaki, kataifi — Allergeni: B·C·L·P</small></span><span class="m-item__dots"></span><span class="m-item__price">4,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Gunkan Tobiko</b><small>tobiko (uova di pesce volante) — Allergeni: I·L·P</small></span><span class="m-item__dots"></span><span class="m-item__price">4,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Gunkan Snowball</b><small>riso, philadelphia, salsa teriyaki, sesamo — Allergeni: E·L·N</small></span><span class="m-item__dots"></span><span class="m-item__price">4,00 €</span></div>
+          </div>
+        </div>
+        <div class="menu-block" data-cat="sushi">
+          <h3>Temaki <span class="jp">手巻</span></h3>
+          <div class="m-list">
+            <div class="m-item"><span class="m-item__name"><b>Temaki Sake</b><small>salmone, avocado — Allergeni: I</small></span><span class="m-item__dots"></span><span class="m-item__price">4,50 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Temaki Maguro</b><small>tonno, avocado — Allergeni: I</small></span><span class="m-item__dots"></span><span class="m-item__price">4,50 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Temaki California</b><small>surimi, avocado, tobiko, maionese — Allergeni: C·G·M·N·P</small></span><span class="m-item__dots"></span><span class="m-item__price">4,50 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Temaki Ebi Tempura</b><small>tempura di gambero, cetriolo, maionese, salsa teriyaki — Allergeni: B·C·L·M·P</small></span><span class="m-item__dots"></span><span class="m-item__price">4,50 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Temaki Spicy Salmone</b><span class="tag-spicy">Piccante</span><small>salmone tritato, tobiko, salsa spicy — Allergeni: I·M</small></span><span class="m-item__dots"></span><span class="m-item__price">4,50 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Temaki Spicy Maguro</b><span class="tag-spicy">Piccante</span><small>tonno tritato, salsa spicy — Allergeni: I·M</small></span><span class="m-item__dots"></span><span class="m-item__price">4,50 €</span></div>
+          </div>
+        </div>
+        <div class="menu-block" data-cat="sushi">
+          <h3>Chirashi <span class="jp">ちらし</span></h3>
+          <div class="m-list">
+            <div class="m-item"><span class="m-item__name"><b>Chirashi Sake</b><span class="tag-new">max 1/pers.</span><small>salmone, riso, sesamo — Allergeni: I·N</small></span><span class="m-item__dots"></span><span class="m-item__price">10,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Chirashi Misto</b><span class="tag-new">max 1/pers.</span><small>pesce misto, riso, sesamo — Allergeni: B·G·I·N·P</small></span><span class="m-item__dots"></span><span class="m-item__price">12,00 €</span></div>
+          </div>
+        </div>
+        <div class="menu-block" data-cat="sushi">
+          <h3>Uramaki <span class="jp">裏巻</span></h3>
+          <div class="m-list">
+            <div class="m-item"><span class="m-item__name"><b>Uramaki Sake</b><small>salmone, avocado, philadelphia, sesamo — Allergeni: E·I·N</small></span><span class="m-item__dots"></span><span class="m-item__price">4,50 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Beefroll</b><small>mango, philadelphia, manzo fumé, salsa teriyaki — Allergeni: E·L</small></span><span class="m-item__dots"></span><span class="m-item__price">5,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Uramaki Ebiten</b><small>tempura di gambero, cetriolo, maionese, salsa teriyaki, kataifi, sesamo — Allergeni: B·C·L·M·N·P</small></span><span class="m-item__dots"></span><span class="m-item__price">5,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Uramaki Spicy Sake</b><span class="tag-spicy">Piccante</span><small>tartare piccante di salmone, salsa spicy, tobiko, sesamo — Allergeni: I·M·N</small></span><span class="m-item__dots"></span><span class="m-item__price">4,50 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Rainbow Roll</b><span class="tag-new">max 1/pers.</span><small>salmone, avocado, varietà di pesce sopra — Allergeni: I</small></span><span class="m-item__dots"></span><span class="m-item__price">5,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Ben Roll</b><small>gamberi fritti, cheddar, salsa teriyaki, cipolla fritta — Allergeni: B·C·E·L·P</small></span><span class="m-item__dots"></span><span class="m-item__price">5,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Ura Golden Roll</b><small>riso venere, philadelphia, salmone cotto, avocado, salsa teriyaki, colorante oro — Allergeni: E·I·L</small></span><span class="m-item__dots"></span><span class="m-item__price">5,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Tuna Fry Roll</b><span class="tag-spicy">Piccante</span><small>philadelphia, avocado, tartare di tonno piccante, spicy maionese, cipolla fritta — Allergeni: E·I·M</small></span><span class="m-item__dots"></span><span class="m-item__price">5,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Uramaki Spicy Salmon Fry</b><span class="tag-spicy">Piccante</span><small>philadelphia, avocado, tartare salmone, tobiko, salsa spicy — Allergeni: E·I·L·M·N·P</small></span><span class="m-item__dots"></span><span class="m-item__price">5,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Dragon Roll</b><span class="tag-new">max 1/pers.</span><small>tempura di gambero, avocado, tobiko, maionese, salsa teriyaki — Allergeni: B·C·L·M·P</small></span><span class="m-item__dots"></span><span class="m-item__price">6,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Philadelphia Roll</b><small>philadelphia, avocado, salmone crudo, salsa lime — Allergeni: E·I·M</small></span><span class="m-item__dots"></span><span class="m-item__price">5,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Futomaki</b><small>salmone, avocado, polpa di granchio, philadelphia — Allergeni: B·E·G·I·P</small></span><span class="m-item__dots"></span><span class="m-item__price">5,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Fu Roll</b><small>salmone cotto, philadelphia, salmone scottato, kataifi, salsa teriyaki — Allergeni: C·E·I·L</small></span><span class="m-item__dots"></span><span class="m-item__price">4,50 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Uramaki Ebiten Plus</b><small>tempura di gambero, maionese, salmone, perle croccanti di riso — Allergeni: B·C·D·I·M·P</small></span><span class="m-item__dots"></span><span class="m-item__price">5,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Pink Roll</b><span class="tag-veg">Veg</span><small>Patate fritte, perle croccanti di riso, salsa fragola — Allergeni: C</small></span><span class="m-item__dots"></span><span class="m-item__price">5,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Uramaki Vegetariano</b><span class="tag-veg">Veg</span><small>cetriolo, avocado, salsa senape, cipolla fritta — Allergeni: C·K·M</small></span><span class="m-item__dots"></span><span class="m-item__price">5,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Saudade</b><span class="tag-new">max 1/pers.</span><small>tartare di salmone, avocado, salsa teriyaki, tobiko, sesamo — Allergeni: I·L·M·N</small></span><span class="m-item__dots"></span><span class="m-item__price">6,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Uramaki Spicy Tuna</b><span class="tag-spicy">Piccante</span><small>tartare piccante di tonno, salsa spicy, sesamo — Allergeni: I·M·N</small></span><span class="m-item__dots"></span><span class="m-item__price">5,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Mango Roll</b><small>gamberi fritti, mango, tobiko, riso nero, salsa al mango, philadelphia, salsa teriyaki — Allergeni: B·C·E·L·M·P</small></span><span class="m-item__dots"></span><span class="m-item__price">5,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Toki Roll</b><span class="tag-new">max 1/pers.</span><small>insalata, gamberi fritti, mandorle, salsa al limone — Allergeni: B·C·E·H·M·P</small></span><span class="m-item__dots"></span><span class="m-item__price">5,50 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Uramaki Crab</b><span class="tag-spicy">Piccante</span><small>polpa di granchio fritto, sesamo, salsa dello chef — Allergeni: B·C·N·P</small></span><span class="m-item__dots"></span><span class="m-item__price">4,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Key Roll</b><small>granchio, avocado, cipolla, maionese, sesamo — Allergeni: B·C·I·M·N·P</small></span><span class="m-item__dots"></span><span class="m-item__price">5,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Oro Roll</b><span class="tag-veg">Veg</span><span class="tag-new">max 1/pers.</span><small>mango, avocado, riso soffiato, colorante oro (senza alghe) — Allergeni: E</small></span><span class="m-item__dots"></span><span class="m-item__price">5,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Uramaki Queen Roll</b><span class="tag-spicy">Piccante</span><span class="tag-new">max 1/pers.</span><small>tartare di salmone, avocado, philadelphia, fragola, esterno salmone, salsa teriyaki — Allergeni: E·L</small></span><span class="m-item__dots"></span><span class="m-item__price">6,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Futomaki Fritti</b><small>salmone, avocado, granchio,  salsa teriyaki — Allergeni: B·C·I·M·P</small></span><span class="m-item__dots"></span><span class="m-item__price">5,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Mulla Roll</b><small>salmone impanato fritto, philadelphia, sesamo, salsa teriyaki — Allergeni: C·I·L·M·N</small></span><span class="m-item__dots"></span><span class="m-item__price">5,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Tobiko Roll</b><small>salmone, tobiko, avocado — Allergeni: I·L·P</small></span><span class="m-item__dots"></span><span class="m-item__price">5,50 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Noir Tai Roll</b><small>salmone fritto, pesce bianco, salsa spicy, riso nero, tobiko — Allergeni: C·I·L·M·P</small></span><span class="m-item__dots"></span><span class="m-item__price">5,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Tonno Cotto Roll</b><small>tonno cotto, maionese, philadelphia, sesamo, salsa teriyaki — Allergeni: E·I·L·M·N</small></span><span class="m-item__dots"></span><span class="m-item__price">5,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Chicken Uramaki</b><small>salsa dello chef, pollo fritto, sesamo — Allergeni: C·L·M·N</small></span><span class="m-item__dots"></span><span class="m-item__price">5,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Amaebi Roll</b><span class="tag-new">max 1/pers.</span><small>salmone fritto, avocado, philadelphia con latte condensato, gambero rosso, uova di salmone — Allergeni: C·E·I·M·P</small></span><span class="m-item__dots"></span><span class="m-item__price">6,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Tropicale Uramaki</b><small>salmone, tartare di salmone, mango, salsa al mango, sesamo, cetriolo — Allergeni: E·I·N</small></span><span class="m-item__dots"></span><span class="m-item__price">6,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Ura Noir Fry Roll</b><small>salmone cotto, mandorle, philadelphia — Allergeni: H·I·L</small></span><span class="m-item__dots"></span><span class="m-item__price">5,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Uramaki Beef Sweet Potato Roll</b><small>patate dolci fritte, manzo fumé, salsa teriyaki — Allergeni: C·L</small></span><span class="m-item__dots"></span><span class="m-item__price">5,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Noir Ebiten Spicy</b><span class="tag-spicy">Piccante</span><span class="tag-new">max 1/pers.</span><small>gambero fritto, avocado, philadelphia, salmone piccante, frittura, salsa spicy — Allergeni: B·C·E·I·M·P</small></span><span class="m-item__dots"></span><span class="m-item__price">5,50 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Uramaki California</b><small>granchio, cetriolo, salmone, tobiko, maionese — Allergeni: B·C·I·L·M·P</small></span><span class="m-item__dots"></span><span class="m-item__price">6,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Pistacchio Roll</b><small>polpa di granchio fritto, sesamo, pistacchio, salsa al pistacchio — Allergeni: C·H·N·P</small></span><span class="m-item__dots"></span><span class="m-item__price">5,00 €</span></div>
+          </div>
+        </div>
+        <div class="menu-block" data-cat="sushi">
+          <h3>Sushi Gio <span class="jp">寿司</span></h3>
+          <div class="m-list">
+            <div class="m-item"><span class="m-item__name"><b>Mango Gio</b><span class="tag-new">max 1/pers.</span><small>salmone, philadelphia, mango, salsa al mango — Allergeni: E·I·M</small></span><span class="m-item__dots"></span><span class="m-item__price">4,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Oyko Gio</b><span class="tag-new">max 1/pers.</span><small>salmone, uova di salmone, salsa ponzu — Allergeni: I·L·P</small></span><span class="m-item__dots"></span><span class="m-item__price">4,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Salmone Gio</b><span class="tag-new">max 1/pers.</span><small>salmone, uova di quaglia crude, salsa ponzu — Allergeni: I·L·M</small></span><span class="m-item__dots"></span><span class="m-item__price">4,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Spicy Salmone Gio</b><span class="tag-spicy">Piccante</span><span class="tag-new">max 1/pers.</span><small>salmone, spicy salmone, tobiko, salsa spicy — Allergeni: I·M</small></span><span class="m-item__dots"></span><span class="m-item__price">4,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Zucchina Gio</b><span class="tag-spicy">Piccante</span><small>zucchine, gamberi, tobiko, maionese, salsa teriyaki, kataifi — Allergeni: B·C·L·M·P</small></span><span class="m-item__dots"></span><span class="m-item__price">3,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Ebiten Gio</b><span class="tag-new">max 1/pers.</span><small>salmone, gamberi in tempura, salsa teriyaki, kataifi — Allergeni: B·C·I·L·P</small></span><span class="m-item__dots"></span><span class="m-item__price">4,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Amaebi Gio</b><span class="tag-new">max 1/pers.</span><small>tonno con gamberi crudi, salsa ponzu — Allergeni: B·I·L·P</small></span><span class="m-item__dots"></span><span class="m-item__price">5,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Sake Philadelphia Gio</b><small>salmone, philadelphia, tobiko — Allergeni: E·I·L·P</small></span><span class="m-item__dots"></span><span class="m-item__price">4,00 €</span></div>
+          </div>
+        </div>
+        <div class="menu-block" data-cat="crudo">
+          <h3>Tartare <span class="jp">タルタル</span></h3>
+          <div class="m-list">
+            <div class="m-item"><span class="m-item__name"><b>Tartare Salmone</b><span class="tag-new">max 1/pers.</span><small>salmone, salsa dello chef — Allergeni: I</small></span><span class="m-item__dots"></span><span class="m-item__price">6,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Tartare Tonno</b><span class="tag-new">max 1/pers.</span><small>tonno, salsa dello chef, insalata, mandorle — Allergeni: H·I</small></span><span class="m-item__dots"></span><span class="m-item__price">8,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Tartare Granchio</b><span class="tag-new">max 1/pers.</span><small>granchio, salsa dello chef, avocado, insalata, philadelphia — Allergeni: B·C·E·P</small></span><span class="m-item__dots"></span><span class="m-item__price">6,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Tarta Tofu</b><span class="tag-new">max 1/pers.</span><small>tofu, alghe, salmone, salsa ponzu, wasabi — Allergeni: I·J·L</small></span><span class="m-item__dots"></span><span class="m-item__price">6,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Tartare Crispy Sake</b><span class="tag-new">max 1/pers.</span><small>insalata mista, salmone, salsa senape, riso soffiato, cipolla fritta — Allergeni: C·I·K·M</small></span><span class="m-item__dots"></span><span class="m-item__price">6,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Tartare Crispy Amaebi</b><span class="tag-new">max 1/pers.</span><small>insalata mista, gamberi crudi, riso soffiato, salsa ponzu, wasabi — Allergeni: B·K·P</small></span><span class="m-item__dots"></span><span class="m-item__price">6,00 €</span></div>
+          </div>
+        </div>
+        <div class="menu-block" data-cat="crudo">
+          <h3>Carpaccio <span class="jp">カルパッチョ</span></h3>
+          <div class="m-list">
+            <div class="m-item"><span class="m-item__name"><b>Carpaccio Salmone</b><span class="tag-new">max 1/pers.</span><small>salmone, sesamo, salsa dello chef — Allergeni: I·L·N</small></span><span class="m-item__dots"></span><span class="m-item__price">8,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Carpaccio Tonno</b><span class="tag-new">max 1/pers.</span><small>tonno, pomodoro, cetriolo, mango, salsa dello chef — Allergeni: I·L·N</small></span><span class="m-item__dots"></span><span class="m-item__price">9,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Carpaccio Branzino</b><span class="tag-new">max 1/pers.</span><small>branzino, sesamo — Allergeni: E·I·N</small></span><span class="m-item__dots"></span><span class="m-item__price">8,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Carpaccio Misto</b><span class="tag-new">max 1/pers.</span><small>salmone, tonno, branzino, gambero rosso — Allergeni: B·E·I·N·P</small></span><span class="m-item__dots"></span><span class="m-item__price">9,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Carpaccio Polipo</b><span class="tag-new">max 1/pers.</span><small>polipo, olio di basilico, sesamo, salsa ponzu — Allergeni: G·L·N·P</small></span><span class="m-item__dots"></span><span class="m-item__price">8,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Carpaccio Salmone E Cioccolato</b><span class="tag-new">max 1/pers.</span><small>salmone, cioccolato, salsa dello chef, scorza di lime, salsa al limone — Allergeni: E·I·M</small></span><span class="m-item__dots"></span><span class="m-item__price">8,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Carpaccio Pesce Bianco Con Tartufo</b><span class="tag-new">max 1/pers.</span><small>pesce bianco, salsa yuzu, tartufo a fette — Allergeni: I·L</small></span><span class="m-item__dots"></span><span class="m-item__price">9,00 €</span></div>
+          </div>
+        </div>
+        <div class="menu-block" data-cat="crudo">
+          <h3>Sashimi <span class="jp">刺身</span></h3>
+          <div class="m-list">
+            <div class="m-item"><span class="m-item__name"><b>Sashimi Sake</b><span class="tag-new">max 1/pers.</span><small>salmone — 6 pz. · Allergeni: I</small></span><span class="m-item__dots"></span><span class="m-item__price">6,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Sashimi Tonno</b><span class="tag-new">max 1/pers.</span><small>tonno — 6 pz. · Allergeni: I</small></span><span class="m-item__dots"></span><span class="m-item__price">7,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Sashimi Moriwase</b><span class="tag-new">max 1/pers.</span><small>sashimi misto di pesce fresco (secondo la disponibilità), scampi — 8 pz. · Allergeni: B·I·P</small></span><span class="m-item__dots"></span><span class="m-item__price">10,00 €</span></div>
+          </div>
+        </div>
+        <div class="menu-block" data-cat="crudo">
+          <h3>Toki Crudité <span class="jp">クルード</span></h3>
+          <div class="m-list">
+            <div class="m-item"><span class="m-item__name"><b>Scampi</b><span class="tag-new">max 1/pers.</span><small>scampi — 2 pz. · Allergeni: B</small></span><span class="m-item__dots"></span><span class="m-item__price">6,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Amaebi</b><span class="tag-new">max 1/pers.</span><small>gamberi rossi di Mazara — 2 pz. · Allergeni: B</small></span><span class="m-item__dots"></span><span class="m-item__price">6,00 €</span></div>
+          </div>
+        </div>
+        <div class="menu-block" data-cat="crudo">
+          <h3>Speciale Sushi <span class="jp">盛合せ</span></h3>
+          <div class="m-list">
+            <div class="m-item"><span class="m-item__name"><b>Osaka Moriwase</b><small>nigiri (4 pz), uramaki (4 pz), hosomaki (3 pz) — 11 pz.</small></span><span class="m-item__dots"></span><span class="m-item__price">12,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Kyoto Moriwase</b><small>nigiri (6 pz), uramaki (4 pz), hosomaki (3 pz), sushi gio (1 pz) — 14 pz.</small></span><span class="m-item__dots"></span><span class="m-item__price">18,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Special Sushibar</b><small>sashimi (6 pz), nigiri misti (6 pz), hosomaki (6 pz), uramaki misto (8 pz), sushi gio (4 pz) — 30 pz.</small></span><span class="m-item__dots"></span><span class="m-item__price">30,00 €</span></div>
+          </div>
+        </div>
+        <div class="menu-block" data-cat="primi">
+          <h3>Riso <span class="jp">ご飯</span></h3>
+          <div class="m-list">
+            <div class="m-item"><span class="m-item__name"><b>Riso Bianco</b><small>riso, sesamo — Allergeni: N</small></span><span class="m-item__dots"></span><span class="m-item__price">2,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Riso Cantonese</b><small>riso, prosciutto cotto, piselli, uova — Allergeni: M·P</small></span><span class="m-item__dots"></span><span class="m-item__price">5,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Riso Con Gamberi</b><small>riso, gamberi, carote, uova, piselli — Allergeni: B·M·P</small></span><span class="m-item__dots"></span><span class="m-item__price">6,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Riso Con Salmone</b><small>riso, salmone, verdure, uova — Allergeni: I·M·P</small></span><span class="m-item__dots"></span><span class="m-item__price">6,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Riso Al Tartufo</b><span class="tag-new">max 1/pers.</span><small>riso, uova, piselli, carne di manzo, tartufo — Allergeni: M·P</small></span><span class="m-item__dots"></span><span class="m-item__price">8,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Riso Curry E Pollo</b><small>riso, uova, pollo, piselli, curry — Allergeni: M·P</small></span><span class="m-item__dots"></span><span class="m-item__price">6,00 €</span></div>
+          </div>
+        </div>
+        <div class="menu-block" data-cat="primi">
+          <h3>Spaghetti <span class="jp">焼そば</span></h3>
+          <div class="m-list">
+            <div class="m-item"><span class="m-item__name"><b>Spaghetti Di Riso Con Verdure</b><span class="tag-veg">Veg</span><small>spaghetti di riso saltati con verdure miste, uova — Allergeni: L·M</small></span><span class="m-item__dots"></span><span class="m-item__price">6,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Spaghetti Di Riso Con Gamberi</b><small>spaghetti di riso saltati con gamberi, verdure, uova — Allergeni: B·L·M·P</small></span><span class="m-item__dots"></span><span class="m-item__price">7,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Spaghetti Di Soia Con Verdure</b><span class="tag-veg">Veg</span><small>spaghetti di soia saltati con verdure miste — Allergeni: L</small></span><span class="m-item__dots"></span><span class="m-item__price">6,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Spaghetti Di Soia Con Gamberi</b><small>spaghetti di soia saltati con verdure miste, gamberi — Allergeni: B·L·P</small></span><span class="m-item__dots"></span><span class="m-item__price">7,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Spaghetti Di Soia Piccanti</b><span class="tag-spicy">Piccante</span><small>spaghetti di soia con verdure, carne di manzo — Allergeni: L</small></span><span class="m-item__dots"></span><span class="m-item__price">7,00 €</span></div>
+          </div>
+        </div>
+        <div class="menu-block" data-cat="primi">
+          <h3>Gnocchi <span class="jp">トッポギ</span></h3>
+          <div class="m-list">
+            <div class="m-item"><span class="m-item__name"><b>Gnocchi Con Verdure</b><span class="tag-veg">Veg</span><small>gnocchi di riso saltati con verdure miste, funghi — Allergeni: L</small></span><span class="m-item__dots"></span><span class="m-item__price">6,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Gnocchi Con Gamberi</b><small>gnocchi di riso saltati con gamberi, verdure, funghi — Allergeni: B·L·P</small></span><span class="m-item__dots"></span><span class="m-item__price">7,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Tokbokki</b><span class="tag-spicy">Piccante</span><span class="tag-veg">Veg</span><small>gnocchi coreani di riso, kimchi — Allergeni: D·L</small></span><span class="m-item__dots"></span><span class="m-item__price">6,00 €</span></div>
+          </div>
+        </div>
+        <div class="menu-block" data-cat="primi">
+          <h3>Udon <span class="jp">うどん</span></h3>
+          <div class="m-list">
+            <div class="m-item"><span class="m-item__name"><b>Udon Con Verdure</b><span class="tag-veg">Veg</span><small>udon saltati con verdure miste, uova — Allergeni: C·L·M</small></span><span class="m-item__dots"></span><span class="m-item__price">6,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Udon Con Gamberi</b><small>udon saltati con gamberi, verdure, uova — Allergeni: B·C·L·M·P</small></span><span class="m-item__dots"></span><span class="m-item__price">7,00 €</span></div>
+          </div>
+        </div>
+        <div class="menu-block" data-cat="primi">
+          <h3>Ramen <span class="jp">ラーメン</span></h3>
+          <div class="m-list">
+            <div class="m-item"><span class="m-item__name"><b>Ramen Con Manzo</b><small>ramen, manzo brasato, uova grigliate, verdure, cipollina, sesamo — Allergeni: C·L·M·N</small></span><span class="m-item__dots"></span><span class="m-item__price">8,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Ramen Con Frutti Di Mare</b><small>ramen, gamberetti, seppia, verdure, alghe, sesamo, naruto maki — Allergeni: B·C·G·L·N·P</small></span><span class="m-item__dots"></span><span class="m-item__price">10,00 €</span></div>
+          </div>
+        </div>
+        <div class="menu-block" data-cat="primi">
+          <h3>Mini Wok <span class="jp">炒め</span></h3>
+          <div class="m-list">
+            <div class="m-item"><span class="m-item__name"><b>Mini Wok Calamari</b><span class="tag-spicy">Piccante</span><span class="tag-new">max 1/pers.</span><small>ciuffi di calamari, funghi neri, peperoni, porro — Allergeni: G·L·P</small></span><span class="m-item__dots"></span><span class="m-item__price">10,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Mini Wok Gamberi</b><span class="tag-spicy">Piccante</span><span class="tag-new">max 1/pers.</span><small>gamberi, funghi neri, peperoni, porro — Allergeni: B·L·P</small></span><span class="m-item__dots"></span><span class="m-item__price">10,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Mini Wok Pollo</b><span class="tag-spicy">Piccante</span><span class="tag-new">max 1/pers.</span><small>pollo, peperoni, funghi neri, porro — Allergeni: L·P</small></span><span class="m-item__dots"></span><span class="m-item__price">8,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Mini Wok Manzo</b><span class="tag-spicy">Piccante</span><span class="tag-new">max 1/pers.</span><small>manzo, peperoni, funghi neri, porro — Allergeni: L</small></span><span class="m-item__dots"></span><span class="m-item__price">10,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Mini Wok Cavolfiore</b><span class="tag-spicy">Piccante</span><span class="tag-veg">Veg</span><span class="tag-new">max 1/pers.</span><small>cavolfiore, peperoni — Allergeni: L</small></span><span class="m-item__dots"></span><span class="m-item__price">7,00 €</span></div>
+          </div>
+        </div>
+        <div class="menu-block" data-cat="secondi">
+          <h3>Piatti Caldi <span class="jp">温菜</span></h3>
+          <div class="m-list">
+            <div class="m-item"><span class="m-item__name"><b>Pollo Gongbao</b><span class="tag-spicy">Piccante</span><small>pollo piccante, verdure, arachidi — Allergeni: A·B·C·G·L</small></span><span class="m-item__dots"></span><span class="m-item__price">7,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Pollo Al Limone</b><small>pollo, limone — Allergeni: C·L·P</small></span><span class="m-item__dots"></span><span class="m-item__price">7,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Pollo Con Mandorle</b><small>pollo, mandorle, verdure miste — Allergeni: H·L·P</small></span><span class="m-item__dots"></span><span class="m-item__price">7,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Pollo Dolce Piccante</b><span class="tag-spicy">Piccante</span><small>pollo fritto con dolce piccante — Allergeni: C·P</small></span><span class="m-item__dots"></span><span class="m-item__price">6,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Pollo Funghi E Bambù</b><small>pollo, funghi neri, bambù — Allergeni: L·P</small></span><span class="m-item__dots"></span><span class="m-item__price">6,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Pollo Al Curry</b><small>pollo, verdure, curry — Allergeni: P</small></span><span class="m-item__dots"></span><span class="m-item__price">6,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Pollo Con Patate</b><small>pollo, patate fritte — Allergeni: L·P</small></span><span class="m-item__dots"></span><span class="m-item__price">6,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Pollo Con Verdure</b><small>pollo, verdure — Allergeni: P</small></span><span class="m-item__dots"></span><span class="m-item__price">6,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Anatra All&#x27;Arancia</b><span class="tag-new">max 1/pers.</span><small>anatra arrosto, salsa dello chef — Allergeni: C·E·P</small></span><span class="m-item__dots"></span><span class="m-item__price">8,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Manzo Con Funghi E Bambù</b><small>manzo con salsa oyster saltato con bambù, funghi — Allergeni: G·L·P</small></span><span class="m-item__dots"></span><span class="m-item__price">8,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Manzo Al Pepe Nero</b><small>manzo con salsa, pepe nero, cipolla, peperoni — Allergeni: L·P</small></span><span class="m-item__dots"></span><span class="m-item__price">8,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Manzo Gongbao</b><span class="tag-spicy">Piccante</span><small>manzo piccante, verdure, arachidi — Allergeni: H·L</small></span><span class="m-item__dots"></span><span class="m-item__price">9,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Manzo Con Patate</b><small>manzo, patate fritte — Allergeni: L·P</small></span><span class="m-item__dots"></span><span class="m-item__price">8,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Manzo Al Curry</b><small>manzo con curry, verdure — Allergeni: P</small></span><span class="m-item__dots"></span><span class="m-item__price">8,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Manzo Con Verdure</b><small>manzo, verdure — Allergeni: L·P</small></span><span class="m-item__dots"></span><span class="m-item__price">8,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Gamberi Agrodolce</b><small>gambero fritto con salsa agrodolce, sesamo — Allergeni: B·C·N·P</small></span><span class="m-item__dots"></span><span class="m-item__price">11,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Curry Ebi</b><small>gamberi con curry, cipolla, peperoni — Allergeni: B·P</small></span><span class="m-item__dots"></span><span class="m-item__price">10,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Gamberi Gongbao</b><span class="tag-spicy">Piccante</span><small>gamberi piccanti, verdure, arachidi — Allergeni: B·H·P</small></span><span class="m-item__dots"></span><span class="m-item__price">10,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Gamberi Sale E Pepe</b><small>gamberi sale e pepe, peperoni, cipolla — Allergeni: B·P</small></span><span class="m-item__dots"></span><span class="m-item__price">10,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Gamberi Al Limone</b><small>gamberi con salsa al limone — Allergeni: B·P</small></span><span class="m-item__dots"></span><span class="m-item__price">10,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Gamberi Con Verdure</b><small>gamberi con verdure — Allergeni: B·P</small></span><span class="m-item__dots"></span><span class="m-item__price">10,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Ika Sale E Pepe</b><span class="tag-new">max 1/pers.</span><small>ciuffi di calamari, sale e pepe, peperoni, cipolla — Allergeni: C·G·P</small></span><span class="m-item__dots"></span><span class="m-item__price">10,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Seppie Piccanti</b><span class="tag-spicy">Piccante</span><small>seppie piccanti con peperoni, cipolla — Allergeni: G·L·P</small></span><span class="m-item__dots"></span><span class="m-item__price">10,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Verdure Miste</b><span class="tag-veg">Veg</span><small>bambù, zucchine, funghi, germogli di soia, carote — Allergeni: L</small></span><span class="m-item__dots"></span><span class="m-item__price">4,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Germogli Di Soia</b><span class="tag-veg">Veg</span><small>germogli di soia, carote — Allergeni: L</small></span><span class="m-item__dots"></span><span class="m-item__price">4,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Tofu Mapo</b><span class="tag-spicy">Piccante</span><small>tofu con peperoni secchi piccante, macinato bovino — Allergeni: L</small></span><span class="m-item__dots"></span><span class="m-item__price">6,00 €</span></div>
+          </div>
+        </div>
+        <div class="menu-block" data-cat="secondi">
+          <h3>Teppanyaki <span class="jp">鉄板焼</span></h3>
+          <div class="m-list">
+            <div class="m-item"><span class="m-item__name"><b>Spiedini Di Gamberi</b><small>spiedini di gamberi, salsa teriyaki — 2 pz. · Allergeni: B·L·P</small></span><span class="m-item__dots"></span><span class="m-item__price">5,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Spiedini Di Pollo</b><small>spiedini di pollo, salsa teriyaki — 2 pz. · Allergeni: L·P</small></span><span class="m-item__dots"></span><span class="m-item__price">5,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Gamberoni Alla Griglia</b><span class="tag-new">max 1/pers.</span><small>gamberoni alla griglia, salsa teriyaki — 3 pz. · Allergeni: B·L·P</small></span><span class="m-item__dots"></span><span class="m-item__price">7,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Branzino Alla Griglia</b><span class="tag-new">max 1/pers.</span><small>branzino, salsa teriyaki, sesamo — Allergeni: I·L·N·P</small></span><span class="m-item__dots"></span><span class="m-item__price">6,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Salmone Alla Griglia</b><span class="tag-new">max 1/pers.</span><small>salmone alla griglia, salsa teriyaki — Allergeni: I·L</small></span><span class="m-item__dots"></span><span class="m-item__price">6,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Seppioline Alla Griglia</b><small>seppioline alla griglia, salsa teriyaki — 3 pz. · Allergeni: G·L·P</small></span><span class="m-item__dots"></span><span class="m-item__price">6,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Tofu Di Pesce</b><small>tofu di pesce — Allergeni: C·I·L</small></span><span class="m-item__dots"></span><span class="m-item__price">4,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Gnocchi Coreani Alla Piastra</b><small>gnocchi coreani di riso, salsa dello chef — Allergeni: N</small></span><span class="m-item__dots"></span><span class="m-item__price">4,00 €</span></div>
+            <div class="m-item"><span class="m-item__name"><b>Insalata Alla Piastra</b><span class="tag-veg">Veg</span><small>indivia — Allergeni: L</small></span><span class="m-item__dots"></span><span class="m-item__price">4,50 €</span></div>
+          </div>
+        </div>
     </div>
 
-    <p class="ayce__note" style="color:var(--txt-muted)">I prezzi sono indicativi e da confermare. Alcuni prodotti possono essere surgelati all'origine. Per allergeni e intolleranze chiedi al personale di sala.</p>
-    <div class="center" style="margin-top:20px"><a class="btn" href="contatti.html#prenota">Prenota un tavolo</a></div>
+    <div class="legend">
+      <h4>Legenda allergeni</h4>
+      <p>A Arachidi · B Crostacei · C Cereali con glutine · D Solfiti · E Latte · F Lupini · G Molluschi · H Frutta a guscio · I Pesce · J Sedano · K Senape · L Soia · M Uova · N Semi di sesamo · P Surgelato all'origine</p>
+      <p style="margin-top:8px">I prodotti ittici destinati al consumo crudo sono sottoposti ad abbattimento preventivo. Per motivi di reperibilità alcuni prodotti possono essere congelati o surgelati. Informa il personale in caso di allergie o intolleranze.</p>
+    </div>
   </div>
 </section>
 
